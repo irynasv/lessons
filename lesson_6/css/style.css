@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@font-face { 
+	font-family: "Retrow Mentho"; src: url("../fonts/Retrow-Mentho.woff2") format("woff2"), url("../fonts/Retrow-Mentho.woff") format("woff");
+		font-display: swap;
+		font-weight: 700;
+		font-style: normal;
+}
+@font-face { 
+	font-family: "Retrow Mentho"; src: url("../fonts/Retrow-Mentho-Italic.woff2") format("woff2"), url("../fonts/Retrow-Mentho-Italic.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: italic;
+}
+@font-face { 
+	font-family: "Martyric"; src: url("../fonts/Martyric.woff2") format("woff2"), url("../fonts/Martyric.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+body{
+	font-family: Lato, sans-serif;
+	margin-left: 345px;
+	width: 810px;
+	font-size: 16px;
+	line-height: 25.6px;
+	color: #424551;
+}
+h1{
+	height: 120px;
+	font-weight: 900;
+	font-size: 46px;
+	font-style: normal;
+	line-height: 60px;
+	margin-bottom: 92px;
+	color: #1E212C;
+
+}
+img{
+	height: 360px;
+	margin-bottom: 60px;
+	border-radius: 4px;
+}
+h2{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	color: #1E212C;
+}
+.part-one h2{
+	margin-bottom: 24px;
+}
+.part-one p{
+	font-weight: 400;
+}
+.margin{
+	margin-bottom: 26px;
+}
+.part-one{
+	margin-bottom: 48px;
+}
+.part-two h2{
+	max-width: 752px;
+	padding-left: 58px; 
+	margin-bottom: 48px;
+}
+.part-two p{
+	margin-bottom: 24px;
+}
+li{
+	margin-bottom: 4px;
+	padding-left: 16px;
+}
+.part-two .margin{
+	margin-top: 24px;
+	margin-bottom: 60px;
+}
+
+.my-part{
+font-family: "Retrow Mentho", serif;
+font-size: 20px;
+}
+.my-part h2{
+	text-transform: uppercase;
+	font-family: "Retrow Mentho", serif;
+	font-style: italic;
+	font-size: 50px;
+	background-color: rgba(27, 27, 226, 0.418);
+	width: 75%;
+	min-height: 100px;
+	padding: 35px 70px;
+	margin: 0 auto;
+	border: 3px solid rgb(17, 5, 5);
+	margin-bottom: 40px;
+}
+.martyric{
+	font-family: "Martyric";
+	font-size: 40px;
+	min-width: 300px;
+	max-height: 200px;
+	overflow: auto;
+	margin-bottom: 40px;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	background-color: rgba(120, 9, 9, 0.801);
+	color: black;
+}
+.my-part img{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+.my-part img:hover{
+	box-shadow: 20px 20px 20px 15px rgba(255, 0, 0, 0.781), -20px 10px 10px 30px rgba(0, 0, 0, 0.84);
+}
+#backgroundcolor{
+	background-color: rgba(224, 182, 189, 0.79);
+}
+.my-part a{
+	display: inline-block;
+	margin-left: 150px;
+	padding: 10px;
+	background-color: rgb(114, 206, 145);
+	font-size: 30px;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	border: 4px dotted rgb(13, 39, 13);
+	color: black;
+}
+.my-part a:focus{
+	outline: 5px double red;
+}
+.circule{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: #78e078;
+	text-decoration: line-through;
+	text-align: center;
+	color: red;
+	/* margin: 0 0 auto; */
+	margin: 40px;
+	box-shadow: 20px 20px 30px 20px #000, inset 5px 15px 15px 15px rgb(98, 15, 15);
+}
+.facts h2{
+	text-transform: capitalize;
+	text-decoration: underline;
+	text-align: center;
+	font-size: 45px;
+	font-family: "Retrow Mentho";
+	font-style: italic;
+	letter-spacing: 10px;
+	text-shadow: 2px 3px 7px rgba(30, 189, 54, 0.658), 3px 4px 8px rgb(59, 59, 201);
+	margin: 45px;
+	outline: 2px solid red;
+	padding: 20px;
+	border: 3px dashed yellow;
+	border-radius: 50px 80px;
+	background-color: rgba(90, 7, 80, 0.457);
+}
+.facts p{
+	outline: 4px solid #000;
+	font-size: 30px;
+	padding: 10px;
+	border-radius:  25% 67% 33% 75%;
+	border: 5px solid rgb(68, 13, 221);
+	background-color: rgb(23, 165, 230);
+	color:#fff;
+	text-shadow: 3px 3px 3px #000;
+	overflow: auto;
+	margin: 20px;
+	outline: 7px solid yellow;
+}
+.facts p:hover{
+	outline: 7px solid red;
+	text-shadow: 3px 3px 3px #000, 3px 3px 5px red;
+}
+.button{
+	font-family: "Retrow Mentho";
+	font-style: italic;
+	text-transform: uppercase;
+	display: inline-block;
+	background-color: #3f129fa2;
+	padding: 15px;
+	color: rgb(16, 173, 98);
+	font-size: 35px;
+	border-radius: 15px;
+	box-shadow: 0px 5px 1px 1px rgba(24, 22, 22, 0.854);
+	min-width: 150px;
+	margin-left: 40%;
+	margin-bottom: 50px;
+}
+.button:hover{
+	margin-top: 3px;
+	box-shadow: 0 1px 0 #000;
+}
+.opacity{
+	opacity: 0;
+	font-size: 35px;
+	font-family: "Martyric";
+	color: darkblue;
+	padding-left: 30px;
+	border: 5px solid rgb(6, 6, 6);
+	box-shadow: inset 20px 30px 10px rgba(255, 255, 0, 0.811), inset 30px 30px 15px red;
+	background-color: white;
+	margin-bottom: 50px;
+}
+.opacity:hover{
+	opacity: 1;
+}
+.visibility{
+	font-size: 40px;
+	color: red;
+	font-weight: 700;
+	background-color: black;
+	padding: 30px;
+	margin-bottom: 38px;
+}
+.visibility:hover{
+	visibility: hidden;
+}
+/* ?Не працює */
+.visibility:focus{
+	visibility: visible;
+	color: black;
+}
+/* ?========= */
+.disability{
+	padding: 40px;
+	background-color: grey;
+	color: orangered;
+	font-weight: 900;
+	font-size: 35px;
+	overflow: hidden;
+	border-radius: 68% 32% 83% 17% / 0% 100% 0% 100% ;
+	border: 10px solid black;
+}
+.disability:hover{
+	display: none;
+}
