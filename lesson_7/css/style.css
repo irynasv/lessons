@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@font-face {
+	src: url("../fonts/VarsityRegular.woff2") format("woff2"),
+		 url("../fonts/VarsityRegular.woff") format("woff");
+	font-family: "Varsity";
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+header{
+	background-color: rgba(19, 228, 19, 0.747);
+}
+.header-container{
+	font-family: "Varsity", sans-serif;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: line-through;
+	letter-spacing: 10px;
+	border: 2px solid red;
+	box-shadow: inset -7px -5px 10px black;
+	background-color: rgba(128, 128, 128, 0.744);
+	padding: 5px;
+	max-width: 750px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+/* як варіант
+body{
+	background-color: blue;
+}
+main{
+	max-width: 810px;
+	background-color: yellow;
+	margin: 0 auto;
+}
+*/
+[class*="__container"]{
+	max-width: 810px;
+	margin: 0 auto;
+}
+body{
+	font-family: Lato, sans-serif;
+	font-size: 16px;
+	line-height: 25.6px;
+	color: #424551;
+}
+h1{
+	font-weight: 900;
+	font-size: 46px;
+	font-style: normal;
+	line-height: 60px;
+	margin-bottom: 92px;
+	color: #1E212C;
+
+}
+img{
+	margin-bottom: 60px;
+	border-radius: 4px;
+}
+h2{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	color: #1E212C;
+}
+.part-one h2{
+	margin-bottom: 24px;
+}
+.part-one p{
+	font-weight: 400;
+}
+.margin{
+	margin-bottom: 35px;
+}
+.part-one{
+	margin-bottom: 48px;
+}
+.part-two h2{
+	padding-left: 58px; 
+	margin-bottom: 48px;
+}
+.part-two p{
+	margin-bottom: 24px;
+}
+li{
+	margin-bottom: 4px;
+	padding-left: 16px;
+}
+.part-two .margin{
+	margin-top: 24px;
+	margin-bottom: 60px;
+}
+.background{
+	background-color: wheat;
+	font-family: "Varsity", sans-serif;
+	font-size: 20px;
+}
+.background-container{
+	background-color: skyblue;
+	max-width: 950px;
+	margin: 0 auto;
+}
+.background-container h2{
+	font-family: "Varsity", sans-serif;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 10px;
+	border: 2px solid red;
+	box-shadow: inset -7px -5px 10px black;
+	background-color: rgba(128, 128, 128, 0.744);
+	padding: 10px;
+	margin-bottom: 30px;
+}
+.one{
+	background-image: url("../img/in_mood_small.jpeg");
+	background-repeat: repeat;
+	margin-bottom: 30px;
+}
+.two{
+	background-image: url("../img/in_mood_big.jpeg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-bottom: 30px;
+}
+.three{
+	background-image: url("../img/tarantino.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 30px;
+}
+.four{
+	background-image: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);;
+	color: black;
+	background-image: url("../img/coffee.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	margin-bottom: 30px;
+	}
+	.five{
+		background: url("../img/cigarettes.jpg") no-repeat 20px 30px / 70%, url("../img/and.jpg") no-repeat bottom right / 30%, url("../img/coffee.jpg") repeat-x bottom / 15%, linear-gradient(144deg, rgba(178,58,180,1) 0%, rgba(253,216,29,1) 50%, rgba(69,135,252,1) 100%);
+	}
+	.foot-cont{
+		color: white;
+		font-weight: 700;
+		text-align: center;
+		letter-spacing: 5px;
+		border: 2px solid red;
+		box-shadow: inset -7px -5px 10px black;
+		background-color: rgba(0, 0, 0, 0.744);
+		padding: 10px;
+		margin-bottom: 30px;
+		background-image: url("../img/tarantino_small_img.jpeg");
+		background-color: rgba(0, 0, 0, 0.267);
+	}
