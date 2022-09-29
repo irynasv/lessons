@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body{
+	font-family: Lato, sans-serif;
+	line-height: 25.6px;
+	max-width: 1230px;
+	color: #424551;
+	margin: 0 auto;
+}
+h2{
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 59.8px;
+	color: #1E212C;
+}
+.block1 h2{
+	margin-bottom: 40px;
+}
+.block1 .first{
+	margin-bottom: 48px;
+}
+.block1 h3{
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 42px;
+	margin-bottom: 24px;
+	color: #1E212C;
+}
+.block1 ul li{
+	padding-left: 32px;
+}
+ul li:not(:last-child){
+	margin-bottom: 4px;
+}
+.block1 ul li::before{
+	background: url("../img/icons/vector.svg") 0 0 no-repeat;
+	content: "";
+	display: inline-block;
+	min-height: 15.3px;
+	min-width: 15.4px;
+	margin-right: 16px;
+	margin-top: 5px;
+}
+.block1 ul li:hover::before{
+	transition: all 0.8s ease 0s;
+	transform: rotate(-360deg);
+}
+.block1 ul{
+	margin-bottom: 200px;
+}
+h4{
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+	color: #1E212C;
+}
+.block2 h2{
+	margin-bottom: 16px;
+}
+.block2 p:first-of-type{
+	font-size: 20px;
+	line-height: 30px;
+	color: #787A80;
+	margin-bottom: 32px;
+}
+.block2 ul li{
+	font-weight: 700;
+	padding-left: 24px;
+}
+.block2 ul{
+	margin-bottom: 32px;
+}
+.block2 .star::before{
+	background: url("../img/icons/star.svg") 0 0 no-repeat;
+	display: inline-block;
+	content: "";
+	min-width: 16px;
+	min-height: 16px;
+	margin-right: 8px;
+	margin-bottom: -3px;
+}
+.block2 .button::before{
+	background: url("../img/icons/button.svg") 0 0 no-repeat;
+	display: inline-block;
+	content: "";
+	min-width: 16px;
+	min-height: 16px;
+	margin-right: 8px;
+	margin-bottom: -3px;
+}
+.block2 .human::before{
+	background: url("../img/icons/human.svg") 0 0 no-repeat;
+	display: inline-block;
+	content: "";
+	min-width: 16px;
+	min-height: 16px;
+	margin-right: 8px;
+	margin-bottom: -3px;
+}
+.block2 ul li:hover::before{
+	transition: all 0.5s ease 0s;
+	transform: scale(1.5);
+}
+.block2 p:last-child{
+	margin-bottom: 40px;
+}
+
+.practice{
+	padding-left: 50px;
+	background-color: rgba(238, 130, 238, 0.269);
+	margin-bottom: 100px;
+	font-size: 20px;
+	font-weight: 700;
+
+}
+.nav-one{
+	font-weight: 900;
+	color: blue;
+}
+.nav li ul{
+	display: none;
+	margin-left: 50px;
+}
+ul li:hover ul{
+	display: block;
+}
+ul a:hover+ul{
+	display: block;
+}
+ul a:visited{
+	color: rgb(141, 34, 63);
+}
+.nav{
+	margin-left: 30px;
+	text-decoration: underline;
+}
+p.practice-two__button{
+	width: 100px;
+	padding: 10px;
+	background-color: yellow;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.practise-two img{
+	display: none;
+}
+.botton:target{
+	display: block;
+}
+.practice-three p{
+	border: 2px solid black;
+	margin: 20px;
+}
+.practice-three p:active{
+	background-color: red;
+	font-size: 40px;
+	font-weight: 900;
+}
+.ol{
+	background-color: rgba(0, 128, 0, 0.354);
+	text-transform: uppercase;
+	font-size: 25px;
+	color: blue;
+	padding: 12px;
+	text-align: center;
+}
+ol{
+	margin-left: 20px;
+	margin-bottom: 200px;
+	counter-reset: item;
+	background-color: rgba(0, 128, 0, 0.354);
+}
+ol li::before{
+	counter-increment: item;
+	content: "(" counter(item) ")";
+	color: blue;
+	margin-right: 10px;
+}
+ol li:not(:last-child){
+	margin-bottom: 10px;
+}
+.game{
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: wheat;
+	font-size: 0px;
+	margin-bottom: 40px;
+}
+.game-one{
+	min-width: 250px;
+	min-height: 50px;
+	background-color: rgba(0, 0, 255, 0.808);
+	color: rgba(0, 0, 255, 0.808);
+	display: inline-block;
+	visibility: hidden;
+}
+.game-two{
+	min-width: 350px;
+	min-height: 45px;
+	background-color: rgba(0, 255, 136, 0.808);
+	color: rgba(0, 255, 136, 0.808);
+	display: inline-block;
+	opacity: 0;
+}
+.game-three{
+	min-width: 400px;
+	min-height: 40px;
+	margin-top: 10px;
+	background-color: rgba(255, 0, 157, 0.808);
+	color: rgba(255, 0, 157, 0.808);
+	display: inline-block;
+	opacity: 0;
+}
+.click{
+	width: 100px;
+	padding: 10px;
+	background-color: yellow;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+	border: black;
+	border-radius: 20%;
+	color: black;
+	margin: 0 auto;
+}
+.game-one:target{
+	visibility: visible;
+}
+.game-two:hover{
+	opacity: 1;
+}
+.game-three:hover{
+	opacity: 1;
+}
