@@ -1,0 +1,152 @@
+.wrapper{
+	position: relative;
+	/* overflow: hidden; */
+	min-height: 100%;
+}
+.experiments__container{
+	max-width: 1000px;
+	background-color: rgba(128, 128, 128, 0.447);
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 50px;
+}
+.experiments__container::before{
+	content:"";
+	background: url("../img/rubber_chik.png") 0 0 / 100% no-repeat;
+	display: inline-block;
+	height: 50px;
+	width: 60px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+.experiments__title{
+	text-align: center;
+}
+h1{
+	font-size: 45px;
+	margin-bottom: 20px;
+}
+h2{
+	font-size: 30px;
+	margin-bottom: 15px;
+
+}
+.blocks{
+	min-height: 300px;
+	max-width: 800px;
+	background: url("../img/rubber_chik.png") -150px 0 / 100% no-repeat fixed;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.experiments__block{
+	max-width: 700px;
+	max-height: 200px;
+	overflow: hidden;
+	background-color: rgba(255, 0, 0, 0.436);
+	margin: 0 auto;
+	text-transform: uppercase;
+	border: 1px solid green;
+}
+.experiments__block--black{
+	background-color: rgba(0, 0, 0, 0.763);
+	text-transform: capitalize;
+	border-radius: 20px;
+	color: white;
+	z-index: 1;
+}
+.experiments__block--pic{
+	max-width: 400px;
+	outline: 1px solid red;
+	border-radius: 30% 70% 27% 73% / 67% 12% 88% 33%;
+	z-index: 1;
+	position: absolute;
+	right: 150px;
+	top: 150px;
+}
+.experiments__block--left {
+	position: relative;
+	right: 100px;
+	top: 100px;
+}
+
+.experiments__fixed-chik{
+	max-width: 800px;
+	margin: 0 auto;
+	border: 2px solid black;
+	position: relative;
+	margin-bottom: 50px;
+}
+.experiments__fixed-chik::before{
+	content:"";
+	background: url("../img/rubber_chik.png") 0 0 / 100% no-repeat;
+	display: inline-block;
+	height: 50px;
+	width: 60px;
+	position: absolute;
+	left: -95px;
+}
+.sticky{
+	padding: 20px;
+	margin-bottom: 50px;
+	max-width: 500px;
+	margin: 0 auto;
+	background-color: rgba(0, 128, 0, 0.249);
+}
+.sticky img{
+	width: 100%;
+	border: 2px solid red;
+	position: sticky;
+	top: 10px;
+}
+.sticky p{
+	margin-bottom: 10px;
+	border: 2px solid red;
+	position: sticky;
+	top: 10px;
+}
+.sticky p:first-child{
+	background: url("../img/screen_opt.jpg") 0 0 / 100% no-repeat;
+}
+.sticky p:nth-child(2){
+	background-color: pink;
+}
+.car-experiment__container{
+	width: 1000px;
+	height: 800px;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 50px;
+	background: url("../img/idaho_road_opt.jpg") 0 0 / 100% no-repeat;
+}
+.car__body img {
+max-width: 500px;
+position: absolute;
+top: 500px;
+left: 400px;
+}
+.car__wheel-one img{
+	max-width: 100px;
+	position:absolute;
+	top: 550px;
+	left: 450px;
+}
+.car__wheel-two img {
+	max-width: 100px;
+	position:absolute;
+	top: 540px;
+	right: 140px;
+}
+
+.door img{
+	max-width: 170px;
+	position:absolute;
+	top: 510px;
+	right: 257px;
+}
+.windshield img {
+	max-width: 100px;
+	position:absolute;
+	top: 490px;
+	right: 340px;
+}
