@@ -1,0 +1,246 @@
+.wrapper{
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+}
+.menu__container {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.792);
+	position: fixed;
+	z-index: 100;
+}
+.menu__list {
+	font-size: 0px;
+}
+.menu__item {
+	display: inline-block;
+	border: 1px solid rgba(0, 0, 0, 0.418);
+	font-size: 24px;
+	padding: 10px;
+	width: 25%;
+	text-align: center;
+	position: relative;
+}
+
+.submenu {
+	background-color: rgba(47, 138, 163, 0.895);
+	border: 1px dotted red;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	text-align: left;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease 0s;
+}
+.submenu__list {
+	padding: 5px;
+
+}
+.menu__item:hover .submenu{
+	opacity: 1;
+	visibility: visible;
+}
+.submenu__list:hover {
+	text-decoration: underline;
+}
+.menu__link:hover{
+	text-shadow: 2px 2px 2px green;
+}
+
+.submenu__link, .menu__link{
+	color: white;
+
+}
+.practice__container{
+	max-width: 1200px;
+	background-color: rgba(0, 0, 0, 0.792);
+	position: relative;
+	top: 45px;
+	margin: 0 auto;
+}
+.translate__pic img{
+	transform: translate(260px, 40px) rotate(-25deg);
+	border-radius: 59% 39% 61% 41% / 74% 26% 100% 0%;
+	transition: all 0.3s ease 0s;
+	margin-bottom: 150px;
+}
+.translate__pic:hover img{
+	transform: translate(260px, 100px) rotate(360deg) scale(1.3);
+	outline: 4px solid red;
+}
+
+ .dog{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	overflow: hidden;
+	position: relative;
+} 
+.dog img{
+	width: 200px;
+	height: 200px;
+}
+.dog:hover .dog__sad{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* .clik {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	overflow: hidden;
+	 position: relative;
+}
+.clik__block-blue{
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+}
+.clik__block-black{
+	background-color: black;
+	color: white;
+	width: 200px;
+	height: 200px;
+} */
+.practice__landscape{
+	border: 1px solid red;
+	height: 500px;
+	background: url("../img/opt_road.jpg") 0 0 / cover no-repeat;
+	margin-bottom: 50px;
+	position: relative;
+}
+.windgenerator{
+	height: 100%;
+}
+.top img{
+	position: absolute;
+	width: 100px;
+	top: 150px;
+	left: 50px;
+	transition: all 0.3s ease 0s;
+	z-index: 5;
+}
+.bottom img{
+	position: absolute;
+	width: 150px;
+	height: 200px;
+	object-fit: contain;
+	top: 150px;
+	left: 50px;
+	transform: rotate(120deg) skew(10deg, 0deg);
+}
+.windgenerator__button{
+	background-color: #fff;
+	width: 70px;
+	height: 50px;
+	border: 1px solid black;
+	border-radius: 20%;
+	text-align: center;
+	padding-top: 7px;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+.windgenerator__button:hover{
+	transform: scale(1.1);
+	box-shadow: -5px -10px 20px 7px rgba(1, 1, 1, 0.511);
+}
+.windgenerator:target .top img{
+	top: 90px;
+	transform: rotate(360deg);
+}
+.windgenerator:target .bottom img{
+	top: 155px;
+	left: 40px;
+	transform: rotate(0deg) skew(0deg, 0deg);
+}
+/* ? не працює
+.windgenerator:focus .windgenerator__button{
+display: none;
+} */
+.bike__upper-part {
+	position: absolute;
+	left: 400px;
+	top: 230px;
+	transform: rotate(20deg);
+}
+.bike__wheel img{
+	position: absolute;
+	left: 510px;
+	top: 340px;
+	width: 80px;
+	height: 80px;
+	transform: rotate(30deg);
+	transition: all 0.3s ease 0s;
+}
+.bike:hover .bike__wheel img{
+	transform: rotate(720deg);
+}
+.train__corpus{
+	transform: scale(0.3);
+	transform-origin: 110% -230%;
+}
+.practice__second-part{
+	background-color: rgba(171, 91, 104, 0.765);
+	margin-bottom: 50px;
+	padding-bottom: 20px;
+}
+.preserve-block {
+	margin: 0 auto;
+	width: 300px;
+	height: 250px;
+	background-color: rgba(27, 21, 21, 0.655);
+	perspective: 300px;
+	perspective-origin: -60px 0;
+	transform-style: preserve-3d;
+	margin-bottom: 50px;
+}
+.perserve-rotate {
+	transform: rotateY(180deg);
+	transition: all 0.3s ease 0s;
+}
+.preserve-block:hover .perserve-rotate{
+	transform: rotateY(0deg);
+}
+
+.flip__body {
+	width: 100px;
+	height: 100px;
+	transition: all 0.8s ease 0s;
+	transform-style: preserve-3d;
+	position: relative;
+	margin: 0 auto;
+}
+.flip__front,
+.flip__back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	font-size: 30px;
+	padding: 5px;
+	padding-top: 35px;
+	text-align: center;
+}
+.flip__front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	background-color: #fff;
+	backface-visibility: hidden;
+}
+.flip__back {
+	transform: rotateY(-180deg);
+	background-color: black;
+	color: white;
+}
+.flip:hover .flip__body {
+	transform: rotateY(-180deg);
+}
+
