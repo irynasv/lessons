@@ -1,0 +1,363 @@
+
+.wrapper{
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+}
+[class*="__container"]{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.canva{
+	background-color: rgba(61, 96, 68, 0.189);
+}
+.smoking-girl__container{
+	background-color: rgba(61, 96, 68, 0.411);
+	position: relative;
+	height: 600px;
+	padding: 100px;
+}
+.face {
+	width: 300px;
+	position: absolute;
+	left: 400px;
+	top: 50px;
+	z-index: 1;
+}
+.face img{
+	width: 100%;
+}
+.hand{
+	width: 200px;
+	position: absolute;
+	left: 310px;
+	top: 280px;
+	z-index: 4;
+	animation: hand-rotate 8s ease infinite normal 0s;
+}
+.hand img{
+	width: 100%;
+}
+.smoke {
+	width: 260px;
+	position: absolute;
+	left: 200px;
+	top: 180px;
+	z-index: 3;
+	opacity: 1;
+	visibility: hidden; 
+	animation: smoke 3s ease infinite alternate 4s;
+}
+.smoke img{
+	width: 100%;
+}
+.opened-eye {
+	width: 300px;
+	position: absolute;
+	left: 400px;
+	top: 400px;
+	z-index: 2;
+	opacity: 1;
+	visibility: hidden; 
+	animation: eye 4s cubic-bezier(.02,.05,.96,1.02) infinite alternate 3s;
+}
+.opened-eye img{
+	width: 100%;
+}
+@keyframes hand-rotate {
+	0%{
+		transform: rotate (0deg);
+	}
+	 33.3%{
+		transform: rotate (3deg);
+	} 
+	50%{
+		transform: rotate(-45deg);
+		transform-origin: bottom;
+	}
+	83%{
+		transform: rotate(-45deg);
+		transform-origin: bottom;
+	}
+	100%{
+		transform: rotate(3deg);
+		transform-origin: bottom;
+	}
+}
+@keyframes smoke {
+		0%{
+			opacity: 0;
+			visibility: hidden;
+		}
+		50%{
+			opacity: 1;
+			visibility: visible;
+		}
+		100%{
+			transform: scale(1.1);
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+	@keyframes eye {
+		0%{opacity: 0;
+			visibility: hidden;
+		}
+		2%{
+			opacity: 0;
+			visibility: hidden;
+			left: 400px;
+			top: 50px;
+		}
+		50%{
+			opacity: 1;
+			visibility: visible;
+		}
+		100%{
+			opacity: 1;
+			visibility: visible;
+			left: 400px;
+			top: 50px;
+		}
+	}
+	.transition__container {
+		background: url("../img/sunny_field.jpg") 0 0 / cover no-repeat;
+		height: 600px;
+		margin-bottom: 40px;
+	}
+	.windgenerator {
+		height: 100%;
+		position: relative;
+	}
+	.top img{
+	position: absolute;
+	width: 200px;
+	top: 250px;
+	z-index: 4;
+	}
+	.top--left img{
+		left: 150px;
+		transition: transform 5s ease 0s;
+	}
+	.top--left:hover img{
+		transform: rotate(360deg);
+		/* transform-origin: 250px 150px; */
+	}
+	.top--center img{
+		left: 500px;
+		transform: rotate(10deg);
+		transform-origin: 140px 130px;
+		transition: transform 0.3s ease 0.5s;
+	}
+	.top--center:hover img{
+		transform: scale(1.3) rotate(20deg);
+	} 
+	.top--right img{
+		left: 800px;
+		transition: transform 0.4s linear 0s, transform-origin 0.4s linear 0s;
+	}
+	.top--right:hover img{
+		transform: skew(20deg, 10deg);
+		transform-origin: 250px 150px;
+	} 
+
+	.bottom img{
+		width: 150px;
+		height: 200px;
+		object-fit: contain;
+		position: absolute;
+		top: 390px;
+		z-index: 3;
+	}
+	.bottom--right img{
+		left: 205px;
+	}
+	.bottom--center img{
+		left: 550px;
+	}
+	.bottom--left img{
+		left: 850px;
+	}
+	.day-night {
+		height: 100%;
+		width: 100%;
+		position: relative;
+	}
+	.sun img{
+		width: 400px;
+		height: 200px;
+		object-fit: cover; 
+		position: absolute;
+		top: 60px;
+		left: 0px;
+		animation: sun 16s linear infinite normal running 0s;
+		z-index: 2;
+	}
+	.sun:hover img{
+		transform: scale(1.2);
+	}
+	.moon img{
+		position: absolute;
+		top: 60px;
+		right: -400px;
+		width: 300px;
+		animation: moon 16s linear infinite normal running 0s;
+		z-index: 2;
+	}
+	@keyframes sun {
+		0%{
+			top: 60px;
+			left: 0px;
+		}
+		15%{
+			transform: rotate(-20deg);
+		}
+		25%{
+			top: 60px;
+			left: 100px;
+			transform: scale(1.5) rotate(0deg);
+		}
+		35%{
+			transform: rotate(20deg);
+		}
+		50%{
+			top: 60px;
+			left: -400px;
+			transform: scale(1) rotate(0deg);
+		}
+		100%{
+			top: 60px;
+			left: -400px;
+			transform: scale(1) rotate(0deg);
+		}
+	}
+	@keyframes moon{ 
+			0%{
+				top: 60px;
+				right: -400px;
+				transform: scale(1) rotate(0deg);
+			}
+			50%{
+				top: 60px;
+				right: -400px;
+				transform: scale(1) rotate(0deg);
+			}
+			75%{
+				transform: rotate(20deg);
+			}
+			80%{
+				top: 60px;
+				right: 100px;
+				transform: scale(1.2) rotate(0deg);
+			}
+			90%{
+				transform: rotate(20deg);
+			}
+			100%{
+				top: 60px;
+				right: -400px;
+				transform: scale(1) rotate(0deg);
+			}
+		}
+		.windgenerator::after{
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			right: -1200px;
+			z-index: 1;
+			background-color: rgba(0, 0, 0, 0.699);
+			animation: shadow 16s linear infinite normal running;
+		}
+		 @keyframes shadow {
+			0%{
+				top: 0;
+				right: -1200px;
+			}
+			55%{
+				top: 0;
+				right: -1200px;
+			}
+			85%{
+				top: 0;
+				left: 0px;
+			}
+			100%{
+				top: 0;
+				right: -1200px;
+			}
+		}
+		.other{
+			position: relative;
+			min-height: 200px;
+		}
+		.other__title{
+			position: absolute;
+			left: 50%;
+			top: 0;
+			width: 700px;
+			background-color: rgba(73, 94, 103, 0.836);
+			transform: translate(-50%, 0px);
+			padding: 20px;
+			overflow: hidden;
+		}
+		.other__title h1, 
+		h2{ 
+			text-transform: uppercase;
+			transform: translate(-100%, 0px);
+		}
+		.other__title h1{
+			font-weight: 700;
+			font-size: 35px;
+			margin-bottom: 25px;
+			animation: title 1s ease forwards;
+		}
+		.sub-title h2{
+			font-size: 25px;
+		}
+		.sub-title h2:not(:last-child){
+			margin-bottom: 10px;
+		}
+		.sub-title h2:first-child{
+			animation: one 1s ease 1.1s forwards;
+		}
+		.sub-title h2:nth-child(2){
+			animation: two 1s ease 2.1s forwards;
+		}
+		.sub-title h2:last-child{
+			animation: last 1s ease 3.1s forwards;
+		}
+		@keyframes title {
+			0%{
+				transform: translate(-100%, 0px);
+			}
+			100%{
+				transform: translate(35%, 0px);
+				text-shadow: 1px 1px 3px rgb(26, 78, 33);
+			}
+		}
+		@keyframes one {
+			0%{
+				transform: translate(-100%, 0px);
+			}
+			100%{
+				transform: translate(40%, 0px);
+			}
+		}
+		@keyframes two {
+			0%{
+				transform: translate(-100%, 0px);
+			}
+			100%{
+				transform: translate(35%, 0px);
+			}
+		}
+		@keyframes last {
+			0%{
+				transform: translate(-100%, 0px);
+			}
+			100%{
+				transform: translate(50%, 0px);
+			}
+		}
