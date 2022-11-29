@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/common.css">
+	<title>Lesson 16</title>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				-Шапочка-
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__my-form my-form-block">
+				<div class="my-form-block__container">
+					<div class="my-form-block__body body-my-form">
+						<form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="my-form"
+							enctype="multipart/form-data">
+							<div class="my-form__flex-column">
+								<div class="my-form__line">
+									<label for="my-name" class="my-form__label">Your name</label>
+									<input id="my-name" type="text" name="name" class="my-form__input" required
+										placeholder="Your name">
+								</div>
+								<div class="my-form__line">
+									<label for="my-pass" class="my-form__label">Your password</label>
+									<input id="my-pass" type="password" name="pass" class="my-form__input" required
+										placeholder="Create your passworld">
+								</div>
+								<div class="my-form__line">
+									<label for="my-tel" class="my-form__label">Your phone number</label>
+									<input id="my-tel" type="tel" name="tel" class="my-form__input"
+										placeholder="What is your phone dumber?">
+								</div>
+								<div class="my-form__line">
+									<label for="my-mail" class="my-form__label">Your email</label>
+									<input id="my-mail" type="email" name="mail" class="my-form__input"
+										placeholder="Share your E-mail!">
+								</div>
+								<div class="my-form__line">
+									<label for="my-search" class="my-form__label">Your question</label>
+									<input id="my-search" type="search" name="search" class="my-form__input"
+										placeholder="What if I...??">
+								</div>
+							</div>
+							<div class="my-form__other">
+								<div class="my-form__line">
+									<label for="my-date" class="my-form__label">Last time you ate</label>
+									<input id="my-date" type="date" name="date" class="my-form__input">
+								</div>
+								<div class="my-checkbox">
+									<input id="my-checkbox" type="checkbox" name="checkbox" class="my-checkbox__input"
+										value="yes">
+									<label for="my-checkbox" class="my-checkbox__label">Do you underestimate my power?</label>
+								</div>
+								<div class="my-form__line">
+									<div class="my-form__radio">
+										<input class="my-form__input my-form__input--radio" id="drink-1" checked value="water"
+											name="drink" type="radio">
+										<label for="drink-1" class="my-form__label">WATER</label>
+									</div>
+									<div class="my-form__radio">
+										<input class="my-form__input my-form__input--radio" id="drink-2" value="wine" name="drink"
+											type="radio">
+										<label for="drink-1" class="my-form__label">Wine</label>
+									</div>
+								</div>
+								<div class="my-form__line">
+									<label for="my-file" class="my-form__label">Attach a photo</label>
+									<input id="my-file" type="file" class="my-form__input" name="file" multiple
+										accept="image/png, image/jpeg" required>
+								</div>
+								<div class="my-form__line">
+									<label for="my-text" class="my-form__label">Why do YOU want this jacket?</label>
+									<textarea id="my-text" name="text" class="my-form__area"
+										placeholder="Tell us why exactly YOU deserve to buy this jacket?"></textarea>
+								</div>
+								<div class="my-form__line">
+									<label for="my-select" class="my-form__label">Select the color of the jacket:</label>
+									<select id="my-select" name="list" class="my-form__select">
+										<option value="dirty pink">dirty pink</option>
+										<option value="old grey">old grey</option>
+										<option>vomit green</option>
+										<option>stinky purlpe</option>
+									</select>
+								</div>
+							</div>
+							<div class="my-form__actions">
+								<div class="my-form__line">
+									<button class="my-form__button" type="submit">
+										Submit
+									</button>
+								</div>
+								<div class="my-form__line">
+									<button class="my-form__button" type="reset">
+										Reset
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="page__form form-block">
+				<div class="form-block__container">
+					<div class="form-block__body body-form">
+						<div class="body-form__media">
+							<img class="body-form__image" src="img/form_illustration.svg" alt="illustration">
+						</div>
+						<div class="body-form__content">
+							<h3 class="body-form__title-small">
+								Any questions?
+							</h3>
+							<h2 class="body-form__title">
+								Drop us a line
+							</h2>
+							<form action="https://jsonplaceholder.typicode.com/posts" method="GET" class="form"
+								enctype="multipart/form-data">
+								<div class="form__flex-column">
+									<div class="form__line">
+										<label for="name" class="form__label">First Name*</label>
+										<input id="name" type="text" name="name" class="form__input" required
+											placeholder="Your first name" tabindex="1">
+									</div>
+									<div class="form__line">
+										<label for="email" class="form__label">Email*</label>
+										<input id="email" type="email" name="email" class="form__input" required
+											placeholder="Your working email" tabindex="3">
+									</div>
+									<div class="form__line">
+										<label for="last_name" class="form__label">Last Name*</label>
+										<input id="last_name" type="text" name="last-name" class="form__input" required
+											placeholder="Your last name" tabindex="2">
+									</div>
+									<div class="form__line">
+										<label for="tel" class="form__label">Phone</label>
+										<input id="tel" type="tel" name="tel" class="form__input" placeholder="Your phone number"
+											tabindex="4">
+									</div>
+								</div>
+								<div class="form__line">
+									<label for="message" class="form__label">Message*</label>
+									<textarea id="message" name="message" class="form__area" placeholder="Your message"
+										tabindex="5"></textarea>
+								</div>
+								<div class="form__actions">
+									<div class="checkbox">
+										<input id="checkbox" type="checkbox" name="checkbox" class="checkbox__input" checked
+											value="yes" tabindex="6">
+										<label for="checkbox" class="checkbox__label">I agree to receive communications from
+											Createx Online School</label>
+									</div>
+									<div class="form__button">
+										<button class="button" type="submit" tabindex="7">
+											<span>Send message</span>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			Iryna Sv - 2022 ( . - . )
+		</footer>
+	</div>
+</body>
+
+
+</html>
