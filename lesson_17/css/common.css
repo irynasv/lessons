@@ -1,0 +1,55 @@
+/* button red */
+.button{
+	border-radius: 4px;
+	padding: 16px 40px; 
+	line-height: 1.25;
+	letter-spacing: 0.5px;
+	font-weight: 700;
+	color: white;
+	display: inline-block;
+	background-color: #fff;
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+	position: relative;
+}
+ .button span{
+	position: relative; 
+	z-index: 2;
+} 
+.button::before{
+	content: "";
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(55.95deg, #fd0d04 0%, #c94d05 100%);
+	opacity: 0; 
+	transition: opacity 0.3s ease 0s;
+}
+.button:hover::before{
+	opacity: 1;
+}
+/* button border */
+.button--border{
+	background: transparent;
+	color: #FF3F3A;
+	border: 1px solid #FF3F3A;
+	padding: 15px 40px;
+	position: relative;
+}
+.button--border:hover{
+	color: white;
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+}
+.button:hover{
+	cursor: pointer;
+}
+
+/* ===================ADAPTIVE============== */
+@media(max-width:410px){
+.button--border{
+		padding: 15px 65px;
+	}
+ 
+}
